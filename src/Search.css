@@ -3,6 +3,7 @@
     top: 35px;
     left: 25%;
     width: 100vw;
+    background-color: white;
 }
 
 .search > h2 {
@@ -22,8 +23,8 @@
     padding: 20px;
     position: absolute;
     left: 0;
-    height: 30px;
-    top: 420px;
+    height: 50px;
+    top: 400px;
     border: none;
 }
 
