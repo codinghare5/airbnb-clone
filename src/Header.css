@@ -9,6 +9,10 @@
     background-color: white;
 }
 
+.header__left {
+    position: inherit;
+}
+
 .header__icon {
     object-fit: contain;
     height: 100px;
@@ -38,5 +42,52 @@
     align-items: center;
     justify-content: space-between;
     width: 15vw;
-    margin-right: 80px;
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 990px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .header__left {
+        display: none;
+        position: fixed;
+        visibility: collapse;
+    }
+
+    .header__icon {
+        display: none;
+        position: fixed;
+    }
+    
+    .header > a {
+        display: none;
+        position: fixed;
+    }
+
+    .header__center {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .header__right {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .header__left {
+        position: inherit;
+        display: inherit;
+    }
+
+    .header__icon {
+        visibility: visible;
+    }
+
+    .header > a {
+        visibility: visible;
+    }
 }

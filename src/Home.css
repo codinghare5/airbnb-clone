@@ -2,3 +2,20 @@
     display: flex;
     padding: 30px;
 }
+
+.home__section:last-child() {
+    margin-right: 30px !important;
+}
+
+@media only screen and (max-width: 990px) {
+    .home__section {
+        overflow: auto;
+        white-space: nowrap;
+        margin-right: 30px;
+    }
+
+    .home__section > .card {
+        min-width: fit-content;
+        z-index: 100;
+    }
+}
